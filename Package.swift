@@ -22,12 +22,18 @@ let package = Package(
         .target(
             name: "ZSWTappableLabelSPM",
             dependencies: [
-                .target(name: "ZSWTappableLabel")
+                .target(name: "ZSWTappableLabel"),
+                .target(name: "ZSWTaggedString")
             ]),
         .binaryTarget(
             name: "ZSWTappableLabel",
             url: "https://www.dropbox.com/s/hk5bka4dthcpc3y/ZSWTappableLabel.xcframework.zip?dl=1",
             checksum: "f15198fd3cf601840de7097f80fd5abdb03f3df72b470f01fc7ecec1dfc51064"
+        ),
+        .binaryTarget(
+            name: "ZSWTaggedString",
+            url: "https://www.dropbox.com/s/q2usk14iexjzg4n/ZSWTaggedString.xcframework.zip?dl=1",
+            checksum: "f4c1ffa134ba19dab8c3f6af5a9c0c178d4d9d5952ec5c23cf67efd61044cb40"
         ),
         .testTarget(
             name: "ZSWTappableLabelSPMTests",
